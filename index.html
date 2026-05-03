@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1A1A1A">
+<title>Rocco's Specialty Bar and Pizzeria - Belltown Seattle</title>
+<meta name="description" content="Scratch-made specialty pizzas and serious cocktails in Belltown. 20-inch pies, 120+ beers, house-made bitters and dough. Open daily until midnight. 2312 2nd Ave, Seattle.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Rocco's Specialty Bar and Pizzeria">
+<meta name="geo.region" content="US-WA">
+<meta name="geo.placename" content="Seattle, Washington">
+<meta name="geo.position" content="47.6142;-122.3472">
+<meta name="ICBM" content="47.6142, -122.3472">
+<link rel="canonical" href="https://neonframewebdev.github.io/roccos-seattle/">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Rocco's Specialty Bar and Pizzeria - Belltown Seattle">
+<meta property="og:description" content="Scratch-made specialty pizzas and serious cocktails in Belltown. 20-inch pies, 120+ beers, house-made bitters and dough. Open daily until midnight.">
+<meta property="og:image" content="https://neonframewebdev.github.io/roccos-seattle/assets/og-image.jpg">
+<meta property="og:image:alt" content="Interior dining room at Rocco's Belltown with exposed brick and candlelight">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:url" content="https://neonframewebdev.github.io/roccos-seattle/">
+<meta property="og:site_name" content="Rocco's Specialty Bar and Pizzeria">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rocco's Specialty Bar and Pizzeria - Belltown Seattle">
+<meta name="twitter:description" content="Scratch-made specialty pizzas and serious cocktails. Open daily until midnight in Belltown.">
+<meta name="twitter:image" content="https://neonframewebdev.github.io/roccos-seattle/assets/og-image.jpg">
+<meta name="twitter:image:alt" content="Interior dining room at Rocco's Belltown with exposed brick and candlelight">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="preload" as="image" href="assets/interior_4.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader" aria-hidden="true">
+  <img src="assets/logo.png" alt="Rocco's logo" class="loader__logo" width="220" height="116">
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand" aria-label="Rocco's home">
+      <img src="assets/logo.png" alt="Rocco's Specialty Bar and Pizzeria" class="nav__logo" width="83" height="44">
+    </a>
+    <div class="nav__links" id="navLinks">
+      <a href="#pizza" class="nav__link">Pizza</a>
+      <a href="#bar" class="nav__link">Bar</a>
+      <a href="#kitchen" class="nav__link">Scratch Kitchen</a>
+      <a href="#events" class="nav__link">Events</a>
+      <a href="https://order.toasttab.com/online/roccos-belltown-2312-2nd-avenue" class="nav__link nav__link--cta" target="_blank" rel="noopener">Order Now</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="nav__bar"></span>
+      <span class="nav__bar"></span>
+      <span class="nav__bar"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">&#215;</button>
+  <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+    <a href="#pizza" class="mobile-menu__link">Pizza</a>
+    <a href="#bar" class="mobile-menu__link">Bar</a>
+    <a href="#kitchen" class="mobile-menu__link">Scratch Kitchen</a>
+    <a href="#events" class="mobile-menu__link">Events</a>
+    <a href="https://order.toasttab.com/online/roccos-belltown-2312-2nd-avenue" class="mobile-menu__link mobile-menu__link--cta" target="_blank" rel="noopener">Order Now</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top" aria-label="Hero">
+  <div class="hero__bg" id="heroBg" style="background-image: url('assets/interior_4.jpg');"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p class="hero__eyebrow">Specialty Bar and Pizzeria</p>
+    <h1 class="hero__headline">Specialty pizzas. Serious drinks. Open until midnight.</h1>
+    <p class="hero__sub">Everything on the menu is made from scratch: dough, sauces, ricotta, sausage, bitters. All of it, in-house, in Belltown.</p>
+    <div class="hero__ctas">
+      <a href="https://order.toasttab.com/online/roccos-belltown-2312-2nd-avenue" class="btn btn--primary" target="_blank" rel="noopener">Order Online</a>
+      <a href="#pizza" class="btn btn--ghost">See the Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-label="Quick facts" aria-hidden="true">
+  <div class="ticker__track">
+    <span class="ticker__content">
+      Everything made from scratch &middot; 120+ beers &middot; Specialty cocktails &middot; Open daily 11am to midnight &middot; Slices to go until midnight &middot; Ranked #10 in Seattle &middot; 20 inch specialty pies &middot; Order on Toast Tab &middot; Everything made from scratch &middot; 120+ beers &middot; Specialty cocktails &middot; Open daily 11am to midnight &middot; Slices to go until midnight &middot; Ranked #10 in Seattle &middot; 20 inch specialty pies &middot; Order on Toast Tab &middot;
+    </span>
+  </div>
+</div>
+
+<!-- PIZZA SECTION -->
+<section class="section section--dark pizza" id="pizza">
+  <div class="container">
+    <div class="section__header reveal">
+      <p class="eyebrow">Specialty Pies</p>
+      <h2 class="section__title">Twenty inches of from-scratch trouble</h2>
+      <p class="section__sub">The names tell you everything you need to know.</p>
+    </div>
+    <div class="pizza__grid reveal">
+
+      <article class="pizza-card">
+        <h3 class="pizza-card__name">Jalapeno Face!</h3>
+        <p class="pizza-card__ingredients">jalapeno, cream cheese, bacon, bread crumb, mozzarella, garlic olive oil base</p>
+        <p class="pizza-card__price">$60 whole / $40 half</p>
+      </article>
+
+      <article class="pizza-card">
+        <h3 class="pizza-card__name">Tator Truffle Shuffle</h3>
+        <p class="pizza-card__ingredients">potato, spinach, red onion, asiago, truffle oil, mozzarella, white sauce</p>
+        <p class="pizza-card__price">$56 whole / $36 half</p>
+      </article>
+
+      <article class="pizza-card">
+        <h3 class="pizza-card__name">Three Little Piggies</h3>
+        <p class="pizza-card__ingredients">Zoe's salami, pepperoni, house sausage, mozzarella, red sauce</p>
+        <p class="pizza-card__price">$60 whole / $40 half</p>
+      </article>
+
+      <article class="pizza-card">
+        <h3 class="pizza-card__name">Tikka-Tikka-Tikka</h3>
+        <p class="pizza-card__ingredients">curry-yogurt chicken, red bell pepper, onion, mozzarella, curry-yogurt base, mint chutney</p>
+        <p class="pizza-card__price">$60 whole / $40 half</p>
+      </article>
+
+      <article class="pizza-card">
+        <h3 class="pizza-card__name">Leon the PEARfessional</h3>
+        <p class="pizza-card__ingredients">d'anjou pear, bleu cheese, pistachio, arugula, balsamic, mozzarella, garlic oil</p>
+        <p class="pizza-card__price">$60 whole / $40 half</p>
+      </article>
+
+      <article class="pizza-card">
+        <h3 class="pizza-card__name">Loaded Baked Potato</h3>
+        <p class="pizza-card__ingredients">potato, bacon, cheddar, green onion, mozzarella, ranch base</p>
+        <p class="pizza-card__price">$60 whole / $40 half</p>
+      </article>
+
+      <article class="pizza-card">
+        <h3 class="pizza-card__name">Stacey &amp; Tina's Night Out</h3>
+        <p class="pizza-card__ingredients">ground beef, banana pepper, basil, marinara, garlic oil</p>
+        <p class="pizza-card__price">$60 whole / $40 half</p>
+      </article>
+
+      <article class="pizza-card">
+        <h3 class="pizza-card__name">Veggie Box</h3>
+        <p class="pizza-card__ingredients">red bell, anaheim pepper, kalamata olive, onion, house marinara</p>
+        <p class="pizza-card__price">Seasonal pricing</p>
+      </article>
+
+    </div>
+    <p class="pizza__note reveal">Half-and-half available on all pies. 20" whole or half.</p>
+    <div class="pizza__cta reveal">
+      <a href="https://order.toasttab.com/online/roccos-belltown-2312-2nd-avenue" class="btn btn--primary" target="_blank" rel="noopener">Order Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- SCRATCH KITCHEN SECTION -->
+<section class="section section--alt kitchen" id="kitchen">
+  <div class="container">
+    <div class="kitchen__split reveal">
+      <div class="kitchen__photo-col">
+        <img src="assets/dish_1.jpg" alt="Hands spreading fresh marinara on house-made dough at Rocco's" class="kitchen__hero-img" loading="lazy" width="420" height="560">
+      </div>
+      <div class="kitchen__text-col">
+        <p class="eyebrow">Made Here</p>
+        <h2 class="section__title">Sauces. Dough. Ricotta. Sausage. All of it.</h2>
+        <p class="kitchen__body">Rocco's is a Belltown pizza joint and full bar at 2312 2nd Ave. We make everything from scratch here. Sauces, dressings, dough, ricotta, and sausage. We use local, organic, and artisan products whenever we can.</p>
+        <p class="kitchen__body">The bar is stocked with 120+ beers, a full cocktail program, and house-made bitters and tinctures we blend in-house - Sassafras, Lavender, Bucheron, and a few others. The space is brick, candlelit, and a little weird. That's on purpose.</p>
+        <p class="kitchen__body">Slices to go until midnight. Last seating at 11:15.</p>
+      </div>
+    </div>
+    <div class="kitchen__icons reveal">
+      <div class="kitchen__icon-item">
+        <div class="kitchen__icon-badge">D</div>
+        <p class="kitchen__icon-label">House-made dough</p>
+      </div>
+      <div class="kitchen__icon-item">
+        <div class="kitchen__icon-badge">B</div>
+        <p class="kitchen__icon-label">House bitters and tinctures</p>
+      </div>
+      <div class="kitchen__icon-item">
+        <div class="kitchen__icon-badge">L</div>
+        <p class="kitchen__icon-label">Local, organic, artisan ingredients</p>
+      </div>
+    </div>
+  </div>
+  <div class="kitchen__strip">
+    <img src="assets/dish_2.jpg" alt="House-made dough balls proofing at Rocco's kitchen" class="kitchen__strip-img" loading="lazy" width="1440" height="280">
+  </div>
+</section>
+
+<!-- BAR SECTION -->
+<section class="section section--alt2 bar" id="bar">
+  <div class="container">
+    <div class="section__header reveal">
+      <p class="eyebrow">The Bar Program</p>
+      <h2 class="section__title">120 beers. Serious cocktails. House-made everything.</h2>
+    </div>
+    <div class="bar__layout reveal">
+      <div class="bar__cocktails">
+        <p class="bar__sub">120+ beers. House cocktails. Wine by glass, carafe, or bottle.</p>
+        <ul class="cocktail-list">
+          <li class="cocktail-item">
+            <div class="cocktail-item__header">
+              <span class="cocktail-item__name">Rocco's Espresso Martini</span>
+              <span class="cocktail-item__price">$18</span>
+            </div>
+            <span class="cocktail-item__tag">a house take on a classic</span>
+          </li>
+          <li class="cocktail-item">
+            <div class="cocktail-item__header">
+              <span class="cocktail-item__name">Black Manhattan</span>
+              <span class="cocktail-item__price">$24</span>
+            </div>
+            <span class="cocktail-item__tag">Buffalo Trace Bourbon, Averna Amaro, Barrel-Aged Angostura</span>
+          </li>
+          <li class="cocktail-item">
+            <div class="cocktail-item__header">
+              <span class="cocktail-item__name">Midnight Marauder No. 2</span>
+              <span class="cocktail-item__price">$24</span>
+            </div>
+            <span class="cocktail-item__tag">Sazerac 100pf Rye, Italian coffee liqueur, dry curacao. The perfect nightcap.</span>
+          </li>
+          <li class="cocktail-item">
+            <div class="cocktail-item__header">
+              <span class="cocktail-item__name">French 75</span>
+              <span class="cocktail-item__price">$24</span>
+            </div>
+            <span class="cocktail-item__tag">Astraea Meadow Gin, fresh lemon, St. Germain Elderflower, Champagne. Classy with a kick.</span>
+          </li>
+          <li class="cocktail-item">
+            <div class="cocktail-item__header">
+              <span class="cocktail-item__name">Hemingway Daiquiri</span>
+              <span class="cocktail-item__price">$22</span>
+            </div>
+            <span class="cocktail-item__tag">Aged Neisson Martinique Rhum, Luxardo Maraschino, lime, grapefruit</span>
+          </li>
+          <li class="cocktail-item">
+            <div class="cocktail-item__header">
+              <span class="cocktail-item__name">Old Cuban</span>
+              <span class="cocktail-item__price">$24</span>
+            </div>
+            <span class="cocktail-item__tag">Saint James Aged Rhum, mint, demerara, lime, Barrel-Aged Angostura, bubbles</span>
+          </li>
+          <li class="cocktail-item">
+            <div class="cocktail-item__header">
+              <span class="cocktail-item__name">Scottish Coffee</span>
+              <span class="cocktail-item__price">$20</span>
+            </div>
+            <span class="cocktail-item__tag">Blended Scotch, espresso liqueur, hot coffee, Frangelico whipped cream. Cold weather warmer.</span>
+          </li>
+        </ul>
+        <p class="bar__house-note">All bitters and tinctures made in-house.</p>
+        <div class="bar__callout">
+          Draft beer list changes. 120+ options. Ask your server or pull up the full list.
+        </div>
+      </div>
+      <div class="bar__photos">
+        <img src="assets/drink_1.jpg" alt="Four house-made apothecary bitters bottles at Rocco's bar" class="bar__photo bar__photo--main" loading="lazy" width="360" height="480">
+        <img src="assets/drink_2.jpg" alt="Bourbon shelf at Rocco's" class="bar__photo bar__photo--secondary" loading="lazy" width="280" height="200">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STARTERS SECTION -->
+<section class="section section--dark starters" id="starters">
+  <div class="container">
+    <div class="section__header reveal">
+      <p class="eyebrow">To Start</p>
+      <h2 class="section__title">Appetizers &amp; Salads</h2>
+    </div>
+    <div class="starters__grid reveal">
+      <div class="starters__col">
+        <h3 class="starters__col-title">Appetizers</h3>
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <div class="menu-list__header">
+              <span class="menu-list__name">Meatballs al Forno</span>
+              <span class="menu-list__price">$22</span>
+            </div>
+            <span class="menu-list__desc">100% Washington grass-fed beef, marinara, mozzarella, basil, pecorino, served with bread</span>
+          </li>
+          <li class="menu-list__item">
+            <div class="menu-list__header">
+              <span class="menu-list__name">Stuffed Cheese Bread</span>
+            </div>
+          </li>
+          <li class="menu-list__item">
+            <div class="menu-list__header">
+              <span class="menu-list__name">Garlic Cheese Bread</span>
+            </div>
+          </li>
+          <li class="menu-list__item">
+            <div class="menu-list__header">
+              <span class="menu-list__name">Focaccia</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="starters__col">
+        <h3 class="starters__col-title">Salads</h3>
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <div class="menu-list__header">
+              <span class="menu-list__name">Caesar</span>
+              <span class="menu-list__price">sm $11 / md $18 / lg $28</span>
+            </div>
+            <span class="menu-list__desc">romaine, crouton, asiago, caesar dressing</span>
+          </li>
+          <li class="menu-list__item">
+            <div class="menu-list__header">
+              <span class="menu-list__name">Arugula <span class="tag">V / GF</span></span>
+              <span class="menu-list__price">sm $11 / md $18 / lg $28</span>
+            </div>
+            <span class="menu-list__desc">arugula, anjou pear, roasted hazelnut, dried cranberry, goat cheese, dried cranberry vinaigrette</span>
+          </li>
+          <li class="menu-list__item">
+            <div class="menu-list__header">
+              <span class="menu-list__name">Greek <span class="tag">V / GF</span></span>
+              <span class="menu-list__price">sm $11 / md $18 / lg $28</span>
+            </div>
+            <span class="menu-list__desc">romaine, persian cucumber, cherry tomato, kalamata olive, feta, pepperoncini, red onion, greek vinaigrette</span>
+          </li>
+        </ul>
+        <p class="starters__add-ons">Add pasture-raised chicken (+$8), prosciutto (+$6), or oil-cured anchovies (+$4).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS SECTION -->
+<section class="section section--alt reviews" id="reviews">
+  <div class="container">
+    <div class="section__header reveal">
+      <p class="eyebrow">What People Say</p>
+      <h2 class="section__title">#10 in Seattle. 4,177 reviews.</h2>
+    </div>
+    <div class="reviews__grid reveal">
+      <blockquote class="review-card">
+        <p class="review-card__quote">"Hands down the best pizza I've ever eaten. Innovative toppings, great quality and overall just amazing. Plus it's open late so great to go post drinks."</p>
+        <footer class="review-card__byline">TripAdvisor reviewer</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p class="review-card__quote">"The loaded potato bacon specialty pizza was the best I've had since Basic in San Diego."</p>
+        <footer class="review-card__byline">TripAdvisor reviewer</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p class="review-card__quote">"Great meatball appetizer with high quality and large portions. Wonderful focaccia, hot out of the oven."</p>
+        <footer class="review-card__byline">TripAdvisor reviewer</footer>
+      </blockquote>
+    </div>
+    <div class="reviews__footer reveal">
+      <hr class="reviews__rule">
+      <p class="reviews__stat">Ranked #10 of 3,219 Seattle restaurants on TripAdvisor. 4.4 stars across 4,177 Google reviews.</p>
+      <hr class="reviews__rule">
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS SECTION -->
+<section class="section section--dark events" id="events">
+  <div class="container">
+    <div class="events__inner reveal">
+      <p class="eyebrow">Private Events</p>
+      <h2 class="section__title">20 to 120 guests. Full bar. Full menu.</h2>
+      <p class="events__body">Rocco's hosts private parties from 20 to 120 guests. The space is yours - full bar service, the full scratch-made menu, and a Belltown vibe that actually photographs well. Catering available for direct delivery orders of $500 and up (no third-party platforms). For parties of 19 or more, reserve by email.</p>
+      <div class="events__callouts">
+        <div class="events__callout-item">
+          <p>Catering available for orders $500+</p>
+        </div>
+        <div class="events__callout-item">
+          <p>Large parties: reserve by email</p>
+        </div>
+      </div>
+      <a href="mailto:janet.barmanager@roccosseattle.com" class="btn btn--ghost">Inquire About Events</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section__header reveal">
+      <p class="eyebrow">Inside Rocco's</p>
+    </div>
+    <div class="gallery__grid reveal">
+      <div class="gallery__item">
+        <img src="assets/atmosphere_1.jpg" alt="Bar crowd at Rocco's with warm amber lighting" loading="lazy" width="533" height="400">
+      </div>
+      <div class="gallery__item">
+        <img src="assets/atmosphere_2.jpg" alt="Cocktail with owl figurine at Rocco's bar" loading="lazy" width="533" height="400">
+      </div>
+      <div class="gallery__item">
+        <img src="assets/interior_2.jpg" alt="Dough toss collage at Rocco's kitchen" loading="lazy" width="533" height="400">
+      </div>
+      <div class="gallery__item">
+        <img src="assets/dish_3.jpg" alt="Fresh salads at Rocco's" loading="lazy" width="533" height="400">
+      </div>
+      <div class="gallery__item">
+        <img src="assets/exterior_1.jpg" alt="Rocco's exterior at night on 2nd Ave Belltown" loading="lazy" width="533" height="400">
+      </div>
+    </div>
+    <p class="gallery__note reveal">5 photos shown. More from Instagram when we connect.</p>
+  </div>
+</section>
+
+<!-- CONTACT / VISIT SECTION -->
+<section class="section section--alt2 visit" id="visit">
+  <div class="container">
+    <div class="section__header reveal">
+      <p class="eyebrow">Come In</p>
+      <h2 class="section__title">Open daily. Kitchen until midnight.</h2>
+    </div>
+    <div class="visit__layout reveal">
+      <div class="visit__info">
+        <div class="visit__hours">
+          <h3 class="visit__col-title">Hours</h3>
+          <table class="hours-table">
+            <tbody>
+              <tr>
+                <td class="hours-table__day">Daily</td>
+                <td class="hours-table__time">11 AM - Midnight</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="visit__note">Last seating 11:15 PM</p>
+          <p class="visit__note">Slices to go until midnight</p>
+          <p class="visit__note">Delivery until 11:15 PM</p>
+        </div>
+        <div class="visit__address">
+          <h3 class="visit__col-title">Find Us</h3>
+          <p class="visit__address-text">2312 2nd Ave<br>Seattle, WA 98121<br>Belltown</p>
+          <p class="visit__phone"><a href="tel:+12064482625">(206) 448-2625</a></p>
+          <p class="visit__email"><a href="mailto:info@roccosseattle.com">info@roccosseattle.com</a></p>
+        </div>
+        <div class="visit__order">
+          <a href="https://order.toasttab.com/online/roccos-belltown-2312-2nd-avenue" class="btn btn--primary" target="_blank" rel="noopener">Order on Toast Tab</a>
+          <div class="visit__delivery">
+            <p class="visit__delivery-label">Also on:</p>
+            <div class="visit__delivery-links">
+              <span>Postmates</span>
+              <span>Grubhub</span>
+              <span>Uber Eats</span>
+              <span>DoorDash</span>
+              <span>Caviar</span>
+            </div>
+          </div>
+        </div>
+        <div class="visit__social">
+          <a href="https://www.facebook.com/roccosseattle" class="social-link" target="_blank" rel="noopener" aria-label="Rocco's Facebook">Facebook</a>
+          <a href="https://www.instagram.com/roccos_seattle" class="social-link" target="_blank" rel="noopener" aria-label="Rocco's Instagram">Instagram</a>
+          <a href="https://www.yelp.com/biz/roccos-seattle" class="social-link" target="_blank" rel="noopener" aria-label="Rocco's Yelp">Yelp</a>
+        </div>
+      </div>
+      <div class="visit__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.3!2d-122.3472!3d47.6142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490158c29b64f25%3A0x1234567890abcdef!2s2312+2nd+Ave%2C+Seattle%2C+WA+98121!5e0!3m2!1sen!2sus!4v1620000000000"
+          width="100%"
+          height="280"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Rocco's location at 2312 2nd Ave Belltown Seattle"
+          aria-label="Google map showing Rocco's at 2312 2nd Ave Belltown Seattle">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+  <div class="footer__inner">
+    <a href="#top" aria-label="Back to top">
+      <img src="assets/logo.png" alt="Rocco's Specialty Bar and Pizzeria" class="footer__logo" width="106" height="56" loading="lazy">
+    </a>
+    <p class="footer__tagline">Scratch-made pizza. Full bar. Belltown.</p>
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <a href="#pizza" class="footer__nav-link">Pizza</a>
+      <a href="#bar" class="footer__nav-link">Bar</a>
+      <a href="#kitchen" class="footer__nav-link">Kitchen</a>
+      <a href="#events" class="footer__nav-link">Events</a>
+      <a href="#gallery" class="footer__nav-link">Gallery</a>
+      <a href="#visit" class="footer__nav-link">Visit</a>
+    </nav>
+    <div class="footer__social">
+      <a href="https://www.facebook.com/roccosseattle" class="footer__social-link" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+      <a href="https://www.instagram.com/roccos_seattle" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      <a href="https://www.yelp.com/biz/roccos-seattle" class="footer__social-link" target="_blank" rel="noopener" aria-label="Yelp">Yelp</a>
+    </div>
+    <p class="footer__fine">
+      &copy; Rocco's Specialty Bar and Pizzeria &nbsp;&middot;&nbsp; 2312 2nd Ave, Belltown, Seattle, WA 98121 &nbsp;&middot;&nbsp; <a href="tel:+12064482625">(206) 448-2625</a>
+    </p>
+  </div>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
